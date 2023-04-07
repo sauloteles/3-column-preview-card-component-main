@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+    --very-light-gray: hsl(0, 0%, 95%);
+    --lexend: "Lexend Deca";
+    --big-shoulders-display:"Big Shoulders Display";
+}
+
+body{
+    height: 100vh;
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 275px;
+    height: 73vh;
+    
+}
+.card-content{
+    padding: 2rem;
+}
+
+h1{
+    color: var(--very-light-gray);
+    font-family: var(--big-shoulders-display);
+}
+p{
+    color: var(--transparent-white);
+    padding-right: 1.5rem;
+    font-family: var(--lexend);
+    line-height: 1.5rem;
+}
+
+.cor-1{
+    background-color: var(--bright-orange);
+}
+.cor-2{
+    background-color: var(--dark-cyan);
+}
+.cor-3{
+    background-color: var(--very-dark-cyan);
+}
+
+
+
+button{
+    background-color: var(--very-light-gray);
+    font-family: var(--lexend);
+    padding: 1rem;
+    margin-top:2.5rem;
+    border-radius: 1rem;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.cor-btn-1{
+   color: var(--bright-orange);
+}
+.cor-btn-2{
+    color: var(--dark-cyan);
+}
+.cor-btn-3{
+    color: var(--very-dark-cyan);
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
