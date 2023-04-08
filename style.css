@@ -54,12 +54,14 @@ p{
 button{
     background-color: var(--very-light-gray);
     font-family: var(--lexend);
-    padding: 1rem;
+    padding: 1rem; 
     margin-top:2.5rem;
-    border-radius: 1rem;
-    width: 150px;
+    border-radius: 2rem;
+    width: 70%;
     cursor: pointer;
-    border: 1px solid white;
+    border: transparent;    
+    justify-content: center;
+    text-align: center;
     
 }
 
@@ -74,6 +76,37 @@ button{
 }
 
 button:hover{
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
+    border: 1px solid var(--very-light-gray);
+    background-color: transparent;
+    color: var(--very-light-gray);
+
+
 }
+
+@media screen and (max-width:1025px) {
+    body{
+        flex-direction: column;
+        justify-content: unset;
+        
+    }
+    .card{
+        width: 500px;
+    }
+    p{
+        padding-right: 1rem;
+    }
+    button{
+
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .card{
+        width: 80%;
+    }
+}
+
+
+
